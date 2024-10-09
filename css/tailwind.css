@@ -8,14 +8,6 @@
     font-family: "acumin-pro", sans-serif;
   }
 
-  body {
-    @apply leading-normal break-words text-sm;
-  }
-
-  main {
-    @apply w-full lg:w-[70vw];
-  }
-
   p {
     @apply max-w-prose leading-normal break-words;
   }
