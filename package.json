@@ -9,8 +9,8 @@
     "css-prd": "postcss css/tailwind.css > css/tailwind.min.css",
     "js-lint": "eslint js/**/*.ts --fix",
     "css-lint": "prettier --write css/tailwind.css --fix",
-    "sync": "browser-sync start --proxy 'http://anthroposcenic.local/' --files './**/*' --no-inject-changes",
-    "dev": "concurrently \"bun run css-dev\" \"bun run js-dev\" \"bun run sync\"",
+    "sync": "browser-sync start --proxy 'http://localhost:8000/' --files './**/*' --no-inject-changes",
+    "dev": "concurrently \"python -m SimpleHTTPServer 8000\" \"bun run css-dev\" \"bun run js-dev\" \"bun run sync\"",
     "prd": "bun run css-prd && bun run js-lint && bun run js-prd",
     "prepare": "husky install",
     "test": "jest"
@@ -38,10 +38,8 @@
     "cssnano": "^6.1.2"
   },
   "dependencies": {
-    "exif-js": "^2.3.0",
     "fontfaceobserver": "^2.3.0",
     "imagesloaded": "^5.0.0",
-    "node-vibrant": "3.0.0",
     "text-balancer": "^1.0.5"
   }
 }
