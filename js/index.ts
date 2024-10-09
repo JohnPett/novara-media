@@ -9,7 +9,17 @@ const setupModules = ({ selector, include }: Module) => {
 }
 
 function onLoad() {
-  console.log('DOM fully loaded and parsed')
+  new Swiper(".default-carousel", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 }
 
 if (document.addEventListener) document.addEventListener('DOMContentLoaded', onLoad)

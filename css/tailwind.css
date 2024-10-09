@@ -6,12 +6,10 @@
   html {
     @apply overflow-x-hidden subpixel-antialiased scroll-smooth;
     font-family: "acumin-pro", sans-serif;
-    font-weight: 400;
-    font-style: normal;
   }
 
   body {
-    @apply leading-normal break-words;
+    @apply leading-normal break-words text-sm;
   }
 
   main {
