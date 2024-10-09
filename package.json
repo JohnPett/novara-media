@@ -1,0 +1,47 @@
+{
+  "name": "anthroposcenic",
+  "module": "index.js",
+  "scripts": {
+    "start": "bun run dev",
+    "js-dev": "bun build ./js/index.ts --outdir ./ --watch",
+    "css-dev": "postcss css/tailwind.css -o css/tailwind.min.css --watch",
+    "js-prd": "bun build ./js/index.ts --outdir ./ --minify",
+    "css-prd": "postcss css/tailwind.css > css/tailwind.min.css",
+    "js-lint": "eslint js/**/*.ts --fix",
+    "css-lint": "prettier --write css/tailwind.css --fix",
+    "sync": "browser-sync start --proxy 'http://anthroposcenic.local/' --files './**/*' --no-inject-changes",
+    "dev": "concurrently \"bun run css-dev\" \"bun run js-dev\" \"bun run sync\"",
+    "prd": "bun run css-prd && bun run js-lint && bun run js-prd",
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/imagesloaded": "^4.1.6",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "autoprefixer": "^10.4.15",
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.3.3",
+    "postcss": "^8.4.38",
+    "jest": "^29.7.0",
+    "cssnano": "^6.1.2"
+  },
+  "dependencies": {
+    "exif-js": "^2.3.0",
+    "fontfaceobserver": "^2.3.0",
+    "imagesloaded": "^5.0.0",
+    "node-vibrant": "3.0.0",
+    "text-balancer": "^1.0.5"
+  }
+}
