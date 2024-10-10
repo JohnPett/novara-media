@@ -6,13 +6,15 @@ var onLoad = function() {
   }
   const swiper = new Swiper(".default-carousel", {
     loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".swiper-button-next"
+    },
+    autoplay: {
+      delay: 5000
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
     }
   });
   swiper.on("slideChange", function() {
@@ -25,7 +27,7 @@ var onLoad = function() {
 };
 var captions = [
   "Qaryut, Palestine, West Bank - April 4, 2024: Sabry Rateb, 52, enters a greenhouse that was attacked and damaged by settlers in several occasions. The village of Qaryut have been attacked frequently by settlers. The nearby settlement of Shiloh is expanding at speed, recently the settlers took over the village freshwater spring a location that Palestinian villagers said that they had been shot at for trying to approach. (Photo by Lorenzo Tugnoli/ The Washington Post/ Contrasto)",
-  "Yanun al-Fauqa, Palestine, West Bank - April 6, 2024: Mina, daughter of Adnan Abu Haniyeh takes care of the family horse, her house is bordering Itamar\xD5s Farm and most her family land has been made inaccessible by the expansion of this outpost. The village of Yanun and the nearby areas of Yanun al-Fauqa have been subject of frequent settlers attacks. The outpost of Itamar\xD5s Farm, overlooking land of Yanun village is quickly expanding. (Photo by Lorenzo Tugnoli/ The Washington Post/ Contrasto)",
+  "Yanun al-Fauqa, Palestine, West Bank - April 6, 2024: Mina, daughter of Adnan Abu Haniyeh takes care of the family horse, her house is bordering Itamars Farm and most her family land has been made inaccessible by the expansion of this outpost. The village of Yanun and the nearby areas of Yanun al-Fauqa have been subject of frequent settlers attacks. The outpost of Itamar\xD5s Farm, overlooking land of Yanun village is quickly expanding. (Photo by Lorenzo Tugnoli/ The Washington Post/ Contrasto)",
   "Burin, Palestine, West Bank - April 6, 2024: The village of Burin have been almost completely encircled by settlements. The Soufan family lives near the border of one of the settlements. The family is harassed daily by settlers and was forced to build high walls and installed barbed wire for protection. (Photo by Lorenzo Tugnoli/ The Washington Post/ Contrasto)",
   "Shilo settlement, Palestine, West Bank - April 9, 2024: Settlers trains for quick response to security threats in the settlement of Shilo. (Photo by Lorenzo Tugnoli/ The Washington Post/ Contrasto)",
   "Shiloh settlement, Palestine, West Bank - April 9, 2024: A settler opens the window or her house under construction, Ahiya outpost of Shiloh settlement is in the process of being legalised. (Photo by Lorenzo Tugnoli/ The Washington Post/ Contrasto)",

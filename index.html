@@ -15,8 +15,8 @@
 <body class="leading-normal break-words text-sm flex items-center justify-center min-h-screen bg-slate-100 flex-col">
   <main class="max-w-[70vw] bg-white">
     <div class="w-full relative">
-      <div class="absolute left-0 w-full top-0 text-lg z-50">
-        <p class="text-black bg-white p-3 text-sm line-clamp-2 hover:line-clamp-none bg-opacity-70 backdrop-blur-lg hover:bg-opacity-90" id="caption"></p>
+      <div class="absolute left-0 w-full bottom-0 text-lg z-50">
+        <p class="text-black bg-white p-1.5 px-2 text-xs line-clamp-2 hover:line-clamp-none bg-opacity-70 backdrop-blur-lg" id="caption"></p>
       </div>
       <div class="swiper default-carousel swiper-container relative">
         <div class="swiper-wrapper">
@@ -51,17 +51,11 @@
             <img alt="image" class="w-full h-full object-cover" src="img/TUL24003_081.jpg" />
           </div>
         </div>
-        <div class="flex items-center gap-8 lg:justify-start justify-center">
-          <button title="left" id="slider-button-left"
-            class="swiper-button-prev group !p-2 flex justify-center items-center !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5"
-            data-carousel-prev>
-          </button>
-          <button title="right" id="slider-button-right"
-            class="swiper-button-next group !p-2 flex justify-center items-center !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5"
-            data-carousel-next>
-          </button>
-        </div>
-        <div class="swiper-pagination"></div>
+        <button title="right" id="slider-button-right"
+          class="swiper-button-next group !p-4 flex justify-center items-center !w-6 !h-6 transition-all duration-150 rounded-full bg-white -!mt-0.5 !text-black text-xs hover:!text-white hover:bg-black"
+          data-carousel-next>
+          &#9654;
+        </button>
       </div>
     </div>
   </main>

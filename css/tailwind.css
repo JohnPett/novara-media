@@ -6,6 +6,7 @@
   html {
     @apply overflow-x-hidden subpixel-antialiased scroll-smooth;
     font-family: "acumin-pro", sans-serif;
+    font-weight: 400;
   }
 
   p {
@@ -19,4 +20,8 @@
   hr {
     @apply border-0 border-t border-black my-5 opacity-80;
   }
+}
+
+[title="right"]:after {
+  display: none;
 }
