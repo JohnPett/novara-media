@@ -11,6 +11,7 @@
 
   p {
     @apply max-w-prose leading-normal break-words;
+    text-wrap: balance;
   }
 
   svg {

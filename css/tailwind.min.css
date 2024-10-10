@@ -567,6 +567,7 @@ p {
   max-width: 65ch;
   overflow-wrap: break-word;
   line-height: 1.5;
+  text-wrap: balance;
 }
 
 svg {
@@ -618,10 +619,6 @@ hr {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .\!hidden {
   display: none !important;
 }
@@ -646,16 +643,24 @@ hr {
   width: 1.5rem !important;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[90vw\] {
   width: 90vw;
 }
 
-.max-w-\[70vw\] {
-  max-width: 70vw;
+.w-full {
+  width: 100%;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-help {
+  cursor: help;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
 }
 
 .flex-col {
@@ -684,10 +689,6 @@ hr {
 
 .border {
   border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-transparent {
@@ -786,6 +787,18 @@ hr {
   -webkit-line-clamp: none;
 }
 
+.hover\:cursor-grab:hover {
+  cursor: grab;
+}
+
+.hover\:cursor-help:hover {
+  cursor: help;
+}
+
+.hover\:cursor-grabbing:hover {
+  cursor: grabbing;
+}
+
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -812,20 +825,12 @@ hr {
 }
 
 @media (min-width: 950px) {
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:\!flex {
     display: flex !important;
   }
 }
 
 @media (min-width: 1250px) {
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:max-w-\[70vw\] {
     max-width: 70vw;
   }
