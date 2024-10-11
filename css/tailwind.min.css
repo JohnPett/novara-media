@@ -575,6 +575,13 @@ body {
   line-height: 1.5;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 p {
   max-width: 65ch;
   overflow-wrap: break-word;
@@ -622,10 +629,6 @@ p {
 
 .\!h-6 {
   height: 1.5rem !important;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .\!w-6 {
@@ -679,11 +682,6 @@ p {
 
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .\!p-4 {
