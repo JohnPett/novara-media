@@ -3,7 +3,7 @@
 To install dependencies:
 
 ```bash
-bunx install
+bun install
 ```
 
 To run:
