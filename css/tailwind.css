@@ -26,6 +26,6 @@
   }
 }
 
-[title="Next Image"]:after {
+#slider-button-right:after {
   display: none;
 }
