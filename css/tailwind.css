@@ -9,6 +9,10 @@
     font-weight: 400;
   }
 
+  body {
+    @apply leading-normal break-words flex items-center justify-center min-h-screen bg-slate-100 flex-col;
+  }
+
   p {
     @apply max-w-prose leading-normal break-words;
   }
