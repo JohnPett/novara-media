@@ -13,6 +13,10 @@
     @apply leading-normal break-words flex items-center justify-center min-h-screen bg-slate-100 flex-col;
   }
 
+  main {
+    @apply w-[90vw] md:max-w-[70vw] bg-white;
+  }
+
   img {
     @apply w-full h-full object-cover;
   }
