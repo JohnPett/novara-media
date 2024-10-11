@@ -12,14 +12,6 @@
   p {
     @apply max-w-prose leading-normal break-words;
   }
-
-  svg {
-    shape-rendering: geometricPrecision;
-  }
-
-  hr {
-    @apply border-0 border-t border-black my-5 opacity-80;
-  }
 }
 
 [title="Next Image"]:after {

@@ -1,5 +1,5 @@
 {
-  "name": "anthroposcenic",
+  "name": "novara-media",
   "module": "index.js",
   "scripts": {
     "start": "bun run dev",

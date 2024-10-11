@@ -569,20 +569,6 @@ p {
   line-height: 1.5;
 }
 
-svg {
-  shape-rendering: geometricPrecision;
-}
-
-hr {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  border-width: 0px;
-  border-top-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-  opacity: 0.8;
-}
-
 .absolute {
   position: absolute;
 }
