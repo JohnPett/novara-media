@@ -1,9 +1,9 @@
-# Container Boilerplate
+# Novara Media
 
 To install dependencies:
 
 ```bash
-bun install
+bunx install
 ```
 
 To run:
