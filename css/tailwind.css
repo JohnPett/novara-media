@@ -22,7 +22,7 @@
   }
 
   p {
-    @apply max-w-prose leading-normal break-words;
+    @apply max-w-prose leading-normal break-words text-xs md:text-sm lg:text-base;
   }
 }
 
